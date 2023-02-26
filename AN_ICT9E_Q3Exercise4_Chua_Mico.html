@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass&family=Roboto+Slab&family=Unbounded&display=swap" rel="stylesheet">
+	<style type="text/css">
+		h1,h2,h3,th,{
+			font-family: Roboto Slab;
+		}
+		p,td{
+			font-family: Overpass;
+		}
+		img{
+			width: 150px;
+		}
+		body{
+			background-image: url(https://wallpaper.dog/large/17191825.jpg);
+		}
+		.container{
+				padding: 25px;
+		}
+	</style>
+
+
+	<title>Q3 Exercise 4</title>
+</head>
+<body>
+	<nav class="navbar nav-tabs navbar-expand-lg bg-light">
+		<a class="navbar-brand">Mrs. Puff Boating School</a>
+		<ul class="nav navbar-tabs">
+			<li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+			<li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+	<h1 class="bg-light">Mrs. Puff's Boating School</h1>
+		<table class="table table-striped table-hover table-info">
+			<tr class="table-success">
+				<th>Profile Picture</th>
+				<th>Firstname</th>
+				<th>Last Name</th>
+				<th>Grade and Section</th>
+			</tr>
+			<tr>
+				<td><img src="spongebob.png" class="rounded"></td>
+				<td>Spongebob</td>
+				<td>Squarepants</td>
+				<td>9 - Emerald</td>
+			</tr>
+			<tr>
+				<td><img src="patrick.png" class="rounded"></td>
+				<td>Patrick</td>
+				<td>Star</td>
+				<td>9 - Ruby</td>
+			</tr>
+			
+			<tr>
+				<td><img src="https://static.wikia.nocookie.net/spongebob/images/9/96/The_Two_Faces_of_Squidward_174.png/revision/latest?cb=20200923005328" class="rounded"></td>
+				<td>Squidward</td>
+				<td>Tentacles</td>
+				<td>9 - Onyx</td>
+			</tr>
+		</table>
+
+		<h1 class="bg-light">Adding New Students</h1>
+		<div class="container bg-light">
+			<form class="form-group">
+				Enter Firstname: <input type="text" name="Firstname" class="form-control" placeholder="Type your Firstname">
+					<br>
+				Enter Lastname: <input type="text" name="Lastname" class="form-control" placeholder="Type your Lastname">
+					<br>
+				Choose Section:
+					 <select>
+						<option>Emerald</option>
+						<option>Ruby</option>
+						<option>Onyx</option>
+					</select>
+					<br><br>
+
+				Date Enrolled: <input type="date" name="enrolled" class="form-control">
+
+					<br>
+				Submit Profile Picture: <br>
+				<input type="file" name="profile" class="form-control">
+					<br><br>
+				<input type="submit" value="ADD STUDENT" class="btn btn-success btn-block">
+				<input type="reset" value="CANCEL" class="btn-danger btn-block">
+			</form>
+			<footer><small>Pictures are not mine</small></footer>
+		</div>
+	</div>
+</body>
+</html>
